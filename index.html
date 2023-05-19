@@ -89,15 +89,15 @@
             } 
             // Edit
 
-    // function editUserDetails(emailId, name, phonenumber){
-    //     document.getElementById('email').value = emailId ;
-    //     document.getElementById('username').value = name ;
-    //     document.getElementById('phonenumber').value=phonenumber;
+    function editUserDetails(emailId, name, phonenumber){
+        document.getElementById('email').value = emailId ;
+        document.getElementById('username').value = name ;
+        document.getElementById('phonenumber').value=phonenumber;
 
-    //     deleteUser(emailId)
+        deleteUser(emailId)
 
-    // }
-    // deletedUser('abc@gmail.com')
+    }
+    deletedUser('abc@gmail.com')
 
     function deleteUser(userId){
         axios.delete(`https://crudcrud.com/api/41a0af2d32634b30b1f6dda462610a95/appointmentData/${userId}`).then((response)=>{
